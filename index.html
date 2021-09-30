@@ -5,36 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana-speak</title>
-    <style>
-        textarea {
-            width: 50%;
-            height: 10vh;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-
-        }
-        #output{
-            border: 1px solid black;
-            height: 10vh;
-            width: 50%;
-            margin: 1rem;
-            padding: 1rem;
-        }
-       
-    </style>
+    <title>Banana Speak</title>
+    <link href="style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <h1>talk banana</h1>
-    <textarea id="txt-input" placeholder="put your sentence in english here we will convert into banana"></textarea>
-    <button id="btn-translate">Translate</button>
-    <div style="font-size: large;">Output will come here 👇</div>
-    <div id="output"></div>
-    <script src="app.js" type="text/javascript"></script>
+    <nav class="nav-style">
+        <h1>Welcome to Banana Speak</h1>
+    </nav>
 
+    <header class="hero">
+        <img class="hero-image" src="/charles-deluvio-0v_1TPz1uXw-unsplash.jpg">
+    </header>
+
+    <textarea id="text-ip" class=" container container-centre"
+        placeholder="Put a text here for translation..."></textarea>
+    <div class="btn-para container container-centre">
+
+        <button id="btn-translate">Translate the text</button>
+    </div>
+
+    <p class=" btn-para container-centre">Your tranlated sentence will be shown here👇🏾 </p>
+
+
+    <div class=" op-box container container-centre" id="text-op">
+
+    </div>
+    <footer class="footer">
+        <div class="footer-head">About</div>
+        <p>This is a translation app for english to minion's language. Have fun with it!</p>
+    </footer>
+
+  
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
